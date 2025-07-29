@@ -1,4 +1,5 @@
-.header { /*делаем грид контейнер шапки, 3 колонки*/
+.header { 
+  /*делаем грид контейнер шапки, 3 колонки*/
   display: grid;
   grid-template-columns: 1fr min-content 1fr;
   align-items: center;
@@ -6,27 +7,32 @@
   padding: 0 0 7px 2px;
 }
 
-.menu { /*центруем меню*/
+.menu { 
+  /*центруем меню*/
   justify-self: center;
 }
 
-.menu-list { /*делаем блок меню во flex, 
+.menu-list { 
+  /*делаем блок меню во flex, 
   делаем отступ, делаем пустые маркеры*/
   display: flex;
   gap: 33px;
   list-style: circle;
 }
 
-.no-bullit { /*убираем маркер у активной ссылки*/
+.no-bullit { 
+  /*убираем маркер у активной ссылки*/
   list-style-type: none;
 }
 
-.menu-link_active { /*убираем подчеркивание 
+.menu-link_active { 
+  /*убираем подчеркивание 
   у активной ссылки*/
   text-decoration: none;
 }
 
-.menu-link { /*дорабатываем текст меню*/
+.menu-link { 
+  /*дорабатываем текст меню*/
   font-size: 18px;
   line-height: 1.2;
   font-weight: 400;
@@ -34,13 +40,15 @@
   text-decoration-thickness: 1px;
 }
 
-.logo-image { /*преобразуем ссылку 
+.logo-image { 
+  /*преобразуем ссылку 
   в блочный элемент, фиксируем ширину*/
   display: block;
   width: 136px;
 }
 
-.address { /*преобразуем в флекс-бокс элемент,
+.address { 
+  /*преобразуем в флекс-бокс элемент,
   меняем направление в колонки, 
   устанавливаем положение в блоке*/
   max-width: max-content;
@@ -50,7 +58,8 @@
   padding: 0 87px 1px 0;
 }
 
-.contacts-item-tel-email { /*обрабатываем текст 
+.contacts-item-tel-email { 
+  /*обрабатываем текст 
   в списке контактов, убираем подчеркивание*/
   font-weight: 400;
   font-size: 18px;
@@ -61,7 +70,8 @@
   text-transform: none;
 }
 
-.contacts-item-address { /*обрабатываем текст 
+.contacts-item-address { 
+  /*обрабатываем текст 
   в списке контактов*/
   font-weight: 400;
   font-size: 18px;
@@ -71,7 +81,8 @@
   text-transform: none;
 }
 
-.cover { /*делаем фон секции, её позиционирование*/
+.cover { 
+  /*делаем фон секции, её позиционирование*/
   position: relative;
   background: url(../images/cover.jpg);
   background-size: cover;
@@ -80,13 +91,15 @@
   z-index: 1;
 }
 
-.overlay { /*делаем эффект затемнения фона*/
+.overlay { 
+  /*делаем эффект затемнения фона*/
   position: absolute;
   inset: 0;
   background: rgba(0, 0, 0, 0.4);
 }
 
-.cover__title { /*преобразуем звголовок 
+.cover__title { 
+  /*преобразуем звголовок 
   в флекс контейнер, его позиционирование 
   относительно оверлей, прорабаотываем 
   расположение в блоке, работаем с текстом*/
@@ -102,22 +115,26 @@
   padding: 165px 0 0 50px;
 }
 
-.aligned-text_center { /*размещаем в блоке текст*/
+.aligned-text_center { 
+  /*размещаем в блоке текст*/
   align-self: center;
   padding-right: 20px;
 }
 
-.aligned-text_right { /*размещаем в блоке текст*/
+.aligned-text_right { 
+  /*размещаем в блоке текст*/
   align-self: flex-end;
   padding-right: 20px;
 }
 
-.letter-spacing-extended { /*устанавливаем межбуквенное 
+.letter-spacing-extended { 
+  /*устанавливаем межбуквенное 
   расстояние*/
   letter-spacing: 30px;
 }
 
-.cover__description { /*делаем блок с описанием,
+.cover__description { 
+  /*делаем блок с описанием,
   кнопку, их позиционированние*/
   position: relative;
   z-index: 2;
@@ -128,7 +145,8 @@
   margin-top: 106px;
 }
 
-.cover__description-text { /*работатс текстом 
+.cover__description-text { 
+  /*работатс текстом 
   в блоке с описанием*/
   text-transform: uppercase;
   color: #fff;
@@ -136,7 +154,8 @@
   word-spacing: 18px;
 }
 
-.bet-button { /*делаем дизайн кнопки*/
+.bet-button { 
+  /*делаем дизайн кнопки*/
   width: 256px;
   height: 51px;
   text-transform: uppercase;
@@ -148,11 +167,13 @@
   align-items: center;
 }
 
-.lots { /*устанавливаем отступ блока лотов*/
+.lots { 
+  /*устанавливаем отступ блока лотов*/
   padding-top: 180px;
 }
 
-.lots__heading { /*прорабатываем текст шапки 
+.lots__heading { 
+  /*прорабатываем текст шапки 
   блока с лотами*/
   width: 121px;
   font-size: 40px;
@@ -162,7 +183,8 @@
   color: #000;
 }
 
-.lots__card-list { /*делаем флекс-бокс с карточками 
+.lots__card-list { 
+  /*делаем флекс-бокс с карточками 
   лотов, прорабаотываем текст*/
   margin-bottom: 31px;
   inset: 0;
@@ -172,13 +194,15 @@
   list-style: none;
 }
 
-.lots__card-list-item { /*устанавливаем размеры 
+.lots__card-list-item { 
+  /*устанавливаем размеры 
   карточек*/
   width: 334px;
   min-height: 596px;
 }
 
-.card { /*делаем флекс-боксы карточек лотов*/
+.card { 
+  /*делаем флекс-боксы карточек лотов*/
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -187,11 +211,13 @@
   padding: 48px 40px;  
 }
 
-.card-link { /*убираем подчеркивание текста*/  
+.card-link { 
+  /*убираем подчеркивание текста*/  
   text-decoration: none;
 }
 
-.card_type_film { /*устанавливаем фон карточки, 
+.card_type_film { 
+  /*устанавливаем фон карточки, 
   позиционирование относительно оверлея*/
   background: url(../images/card-lot-01.jpg);
   background-size: cover;
@@ -201,7 +227,8 @@
   z-index: 1;
 }
 
-.card_type_book { /*устанавливаем фон карточки, 
+.card_type_book { 
+  /*устанавливаем фон карточки, 
   позиционирование относительно оверлея*/
   background: url(../images/card-lot-02.jpg);
   background-size: cover;
@@ -211,7 +238,8 @@
   z-index: 1;
 }
 
-.card_type_picture { /*устанавливаем фон карточки, 
+.card_type_picture { 
+  /*устанавливаем фон карточки, 
   позиционирование относительно оверлея*/
   background: url(../images/card-lot-03.jpg);
   background-size: cover;
@@ -221,7 +249,8 @@
   z-index: 1;
 }
 
-.card__title { /*прорабатываем заголовок 
+.card__title { 
+  /*прорабатываем заголовок 
   карточки, его позиционирование*/
   font-size: 22px;
   font-weight: 700;
@@ -231,7 +260,8 @@
   text-transform: uppercase;
 }
 
-.card__text { /*прорабатываем текст 
+.card__text { 
+  /*прорабатываем текст 
   карточки, его позиционирование*/
   font-size: 20px;
   font-weight: 400;
@@ -240,14 +270,16 @@
   line-height: 1.2;
 }
 
-.lots__look-more-link { /*прорабатывам ссылку*/
+.lots__look-more-link { 
+  /*прорабатывам ссылку*/
   margin: 30px 0 0 64px;
   font-size: 20px;
   text-underline-offset: 5px;
   
 }
 
-.about { /*делаем грид контейнер для описания, 
+.about { 
+  /*делаем грид контейнер для описания, 
   его расположение, отступы внутренних элементов*/
   padding-top: 120px;  
   display: grid;
@@ -255,7 +287,8 @@
   gap: 50px;
 }
 
-.about__column { /*делаем флекс-боксом блок 
+.about__column { 
+  /*делаем флекс-боксом блок 
   с описанием, расопложение текста внутри*/
   display: flex;
   flex-direction: column;
@@ -264,7 +297,8 @@
   line-height: 1.2;
 }
 
-.about__logo { /*устанавливаем логотип, размеры, 
+.about__logo { 
+  /*устанавливаем логотип, размеры, 
   расоположение в блоке*/
   margin: 35px 0 0 71px;
   width: 240px;
@@ -276,30 +310,35 @@
   align-items: center;
 }
 
-.about__logo-image { /*устанавливаем размер 
+.about__logo-image { 
+  /*устанавливаем размер 
   картинки*/
   width: 148px;
   height: 114px;
 }
 
-.about__title { /*прорабатываем шрифт заголовка*/
+.about__title { 
+  /*прорабатываем шрифт заголовка*/
   font-size: 40px;
   font-weight: 700;
   text-transform: uppercase;
 }
 
-.about__text { /*прорабатываем шрифт текста*/
+.about__text { 
+  /*прорабатываем шрифт текста*/
   font-size: 20px;
   padding-top: 100px;
 
 }
 
-.paragraf-two { /*устанавливаем отступ между 
+.paragraf-two { 
+  /*устанавливаем отступ между 
   абзацами*/
   margin-top: 25px;
 }
 
-.footer { /*устанавливаем размеры футера, 
+.footer { 
+  /*устанавливаем размеры футера, 
   делаем грид*/
   margin-top: 180px;
   height: 180px;
@@ -307,18 +346,21 @@
   grid-template-columns: repeat(3, 1fr);
 }
 
-.footer-address { /*устанавливаем расположение 
+.footer-address { 
+  /*устанавливаем расположение 
   блока с контактами*/
   margin: 25px 0 0 51px;
 }
 
-.footer__menu { /*делаем флекс-боксс списком меню*/
+.footer__menu { 
+  /*делаем флекс-боксс списком меню*/
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.footer__menu-list { /*делаем флекс-боксом 
+.footer__menu-list { 
+  /*делаем флекс-боксом 
   список меню, расположение его в блоке*/
   display: flex;
   flex-direction: column;
@@ -328,7 +370,8 @@
   margin: 25px 0 0 4px;
 }
 
-.footer__social-list { /*устанавливаем флекс-бокс 
+.footer__social-list { 
+  /*устанавливаем флекс-бокс 
   с ссылками на соцсети*/
   display: flex;
   flex-direction: row;
@@ -337,7 +380,8 @@
   margin: 25px 0 0 28px;
 }
 
-.footer__social-icon { /*устанавливаем размеры иконок*/
+.footer__social-icon { 
+  /*устанавливаем размеры иконок*/
   width: 48px;
   height: 48px;
 }
